@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TailwindCSS</title>
+    <link rel="stylesheet" href="/src/output.css" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body
+    class="container h-screen flex justify-center flex-col items-center align-middle w-full transition-all to-transparent bg-gray-100"
+  >
+    <h1 class="text-3xl mb-5">Guest My Number</h1>
+    <div
+      class="mockup-window w-3/6 max-h-96 h-4/5 border-base-300 bg-white border-solid border-gray-300 rounded-xl p-4 border-2"
+    >
+      <div class="flex justify-between">
+        <a style="text-decoration: none" href="./index.html">
+          <div id="btn-decor">
+            <div id="btn-again"
+              class="btn bg-gray-100 transition-all p-2 rounded hover:bg-gray-200"
+            >
+              Again
+          </div>
+          </div>
+        </a>
+
+        <p>Guest any number 1 to 20</p>
+      </div>
+      <div class="flex justify-center items-center align-middle">
+        <div
+          id="number-box"
+          class="w-24 h-24 rounded-xl bg-gray-100 flex justify-center items-center text-6xl"
+        >
+          ?
+        </div>
+      </div>
+      <div
+        id="events-box"
+        class="w-auto h-40 bg-gray-100 rounded-lg flex align-middle items-center justify-around mt-10"
+      >
+        <div class="check-blog">
+          <input
+            autofocus
+            id="check-input"
+            class="border-solid text-center p-1 border-slate-200 hover:border-slate-300 border-2 rounded"
+            placeholder="Guest number"
+            type="number"
+          />
+          <button
+            id="check-button"
+            class="btn mr-10 bg-white border-2 border-slate-200 hover:border-slate-300 disabled:active:not-sr-only active:border-yellow-600 transition-all p-1 rounded"
+          >
+            check
+          </button>
+        </div>
+        <div class="info-blog">
+          <p id="info-text">Strart Game :)</p>
+          <p id="attems-text">Attemps: <span>10</span></p>
+          <p id="record-text">Record: <span>0</span></p>
+        </div>
+      </div>
+    </div>
+    <script src="/app.js"></script>
+  </body>
+</html>
